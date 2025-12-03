@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+/* App-specific styles */
+/* Smooth scrolling and transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 200ms, transform 200ms;
+}
+
+/* Remove focus outline for mouse users, keep it for keyboard */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Keep focus outline for keyboard users */
+:focus-visible {
+  outline: 2px solid #10b981;
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #059669;
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Toast animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.toast-enter {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 2px rgba(16, 185, 129, 0.4),
+      /* subtle constant light shadow */ 0 0 5px #34d399, 0 0 10px #34d399,
+      0 0 20px #10b981;
+  }
+  50% {
+    text-shadow: 0 0 2px rgba(16, 185, 129, 0.4), 0 0 10px #6ee7b7,
+      0 0 20px #34d399, 0 0 30px #10b981;
+  }
+  100% {
+    text-shadow: 0 0 2px rgba(16, 185, 129, 0.4), 0 0 5px #34d399,
+      0 0 10px #34d399, 0 0 20px #10b981;
+  }
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
