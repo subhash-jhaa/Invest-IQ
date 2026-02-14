@@ -153,17 +153,17 @@ const MFCalculator = () => {
                       <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                     ))}
                   </Pie>
-                  <Tooltip 
+                  <Tooltip
                     formatter={(value) => formatCurrency(value)}
-                    contentStyle={{ 
+                    contentStyle={{
                       backgroundColor: 'white',
                       borderRadius: '8px',
                       padding: '8px',
                       boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
                     }}
                   />
-                  <Legend 
-                    verticalAlign="bottom" 
+                  <Legend
+                    verticalAlign="bottom"
                     height={36}
                     iconType="circle"
                     iconSize={10}

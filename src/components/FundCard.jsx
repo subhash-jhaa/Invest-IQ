@@ -1,8 +1,8 @@
 import RiskTag from './RiskTag'
-import { 
-  FiTrendingUp, 
-  FiBarChart2, 
-  FiInfo, 
+import {
+  FiTrendingUp,
+  FiBarChart2,
+  FiInfo,
   FiStar,
   FiAward,
   FiZap, // Using Zap instead of TrendingUp for hot funds
@@ -14,26 +14,26 @@ import FundDetailsModal from './FundDetailsModal';
 
 const FundBadge = ({ type }) => {
   const badges = {
-    hot: { 
-      icon: <FiZap className="w-3.5 h-3.5" />, 
+    hot: {
+      icon: <FiZap className="w-3.5 h-3.5" />,
       text: 'Hot Fund',
       color: 'bg-gradient-to-r from-red-50 to-orange-50 text-red-600 border border-red-100',
       shine: 'animate-pulse'
     },
-    top: { 
-      icon: <FiAward className="w-3.5 h-3.5" />, 
+    top: {
+      icon: <FiAward className="w-3.5 h-3.5" />,
       text: 'Top Rated',
       color: 'bg-gradient-to-r from-purple-50 to-pink-50 text-purple-600 border border-purple-100',
       shine: 'hover:shadow-inner'
     },
-    recommended: { 
-      icon: <FiUsers className="w-3.5 h-3.5" />, 
+    recommended: {
+      icon: <FiUsers className="w-3.5 h-3.5" />,
       text: 'Most Popular',
       color: 'bg-gradient-to-r from-amber-50 to-yellow-50 text-amber-600 border border-amber-100',
       shine: 'hover:shadow-inner'
     }
   };
-  
+
   const badge = badges[type];
   return (
     <span className={`
@@ -49,12 +49,12 @@ const FundBadge = ({ type }) => {
 export default function FundCard({ fund, onExplain }) {
   const [showDetails, setShowDetails] = useState(false);
 
-  const { 
-    name, 
+  const {
+    name,
     description = "A mutual fund investment option", // Default description
     risk = fund.riskLevel, // Fallback to riskLevel if risk not present
-    nav, 
-    returns = {}, 
+    nav,
+    returns = {},
     minInvestment = fund.minimumInvestment, // Fallback to minimumInvestment
     category,
     type,
@@ -90,7 +90,7 @@ export default function FundCard({ fund, onExplain }) {
               <span className="font-semibold text-gray-900">{formatCurrency(nav)}</span>
             </div>
           </div>
-        
+
           <div className="flex items-center justify-between mb-6">
             <p className="text-gray-600 text-sm">{description}</p>
             {onExplain && (
@@ -103,7 +103,7 @@ export default function FundCard({ fund, onExplain }) {
               </button>
             )}
           </div>
-          
+
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-2 text-sm text-gray-600">
               <FiInfo className="text-gray-400" />
@@ -149,7 +149,7 @@ export default function FundCard({ fund, onExplain }) {
                 </button>
               )}
             </div>
-            <button 
+            <button
               onClick={() => setShowDetails(true)}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-50 text-emerald-600 hover:bg-emerald-100 transition-colors"
             >

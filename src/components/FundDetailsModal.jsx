@@ -90,9 +90,8 @@ export default function FundDetailsModal({ fund, onClose, onExplain }) {
           {payload.map((entry, index) => (
             <div
               key={index}
-              className={`text-sm ${
-                entry.name === "nav" ? "text-emerald-600" : "text-blue-600"
-              }`}
+              className={`text-sm ${entry.name === "nav" ? "text-emerald-600" : "text-blue-600"
+                }`}
             >
               <span className="font-medium">
                 {entry.name === "nav" ? "NAV: " : "Trend: "}

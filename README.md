@@ -58,7 +58,7 @@
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/jhasubhash620/Invest-IQ.git
+git clone https://github.com/subhash-jhaa/Invest-IQ.git
 cd Invest-IQ
 
 # 2. Install dependencies
@@ -148,13 +148,13 @@ This project is for **educational purposes only**. Invest-IQ is not a SEBI-regis
 
 **Subhash Kumar Jha**  
 📩 Email: subhashkumarjha162@gmail.com  
-🔗 GitHub: [@jhasubhash620](https://github.com/jhasubhash620)
+🔗 GitHub: [@subhash-jhaa](https://github.com/subhash-jhaa)
 
 ---
 
 ## 💬 Feedback
 
-Got feedback or ideas? [Create an issue](https://github.com/jhasubhash620/Invest-IQ/issues) or reach out!
+Got feedback or ideas? [Create an issue](https://github.com/subhash-jhaa/Invest-IQ/issues) or reach out!
 
 ---
 

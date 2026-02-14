@@ -365,9 +365,9 @@ export default function FundSuggestions() {
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
-                <div className="p-3 bg-blue-50 rounded-lg">
+                <div className="p-3 bg-emerald-50 rounded-lg">
                   <p className="text-sm text-gray-600">Goal</p>
-                  <p className="text-lg font-semibold text-blue-600">
+                  <p className="text-lg font-semibold text-emerald-600">
                     {profile.goal}
                   </p>
                 </div>
@@ -418,7 +418,7 @@ export default function FundSuggestions() {
                         type === "equity"
                           ? "bg-emerald-500"
                           : type === "debt"
-                          ? "bg-blue-500"
+                          ? "bg-emerald-500"
                           : "bg-yellow-500"
                       }`}
                       style={{ width: `${percentage}%` }}
@@ -445,12 +445,12 @@ export default function FundSuggestions() {
                 {profile.investmentType.map((type, index) => (
                   <div
                     key={index}
-                    className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm flex items-center"
+                    className="bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full text-sm flex items-center"
                   >
                     {type}
                     <button
                       onClick={() => handleExplain(type)}
-                      className="ml-1 bg-blue-100 hover:bg-blue-200 rounded-full w-5 h-5 inline-flex items-center justify-center"
+                      className="ml-1 bg-emerald-100 hover:bg-emerald-200 rounded-full w-5 h-5 inline-flex items-center justify-center"
                     >
                       🎓
                     </button>

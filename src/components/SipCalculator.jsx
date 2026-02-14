@@ -45,11 +45,11 @@ export const SipCalculator = () => {
   const growthData = useMemo(() => {
     const data = [];
     const monthlyRate = expectedReturn / 100 / 12;
-    
+
     if (activeTab === 'SIP') {
       let totalInvested = 0;
       let currentValue = 0;
-      
+
       for (let year = 0; year <= timePeriod; year++) {
         if (year === 0) {
           data.push({
@@ -59,11 +59,11 @@ export const SipCalculator = () => {
           });
           continue;
         }
-        
+
         const monthsCompleted = year * 12;
         totalInvested = monthlyInvestment * monthsCompleted;
         currentValue = monthlyInvestment * (((Math.pow(1 + monthlyRate, monthsCompleted) - 1) * (1 + monthlyRate)) / monthlyRate);
-        
+
         data.push({
           year,
           investedAmount: totalInvested,
@@ -75,7 +75,7 @@ export const SipCalculator = () => {
       // Lumpsum calculation
       for (let year = 0; year <= timePeriod; year++) {
         const currentValue = lumpSumInvestment * Math.pow(1 + monthlyRate, year * 12);
-        
+
         data.push({
           year,
           investedAmount: year === 0 ? 0 : lumpSumInvestment,
@@ -84,7 +84,7 @@ export const SipCalculator = () => {
         });
       }
     }
-    
+
     return data;
   }, [activeTab, monthlyInvestment, lumpSumInvestment, expectedReturn, timePeriod]);
 
@@ -121,7 +121,7 @@ export const SipCalculator = () => {
         <h2 className="text-xl sm:text-2xl font-bold text-gray-800">Investment Calculator</h2>
         <p className="text-sm sm:text-base text-gray-600">Plan your financial future with our calculator tools</p>
       </div>
-      
+
       <div className="p-4 sm:p-6 grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-8">
         {/* Left side - Input controls */}
         <div className="lg:col-span-1 space-y-4 sm:space-y-6">
@@ -133,17 +133,15 @@ export const SipCalculator = () => {
             />
             <button
               onClick={() => setActiveTab('SIP')}
-              className={`relative z-10 w-[100px] py-1 font-semibold text-sm rounded-full transition-colors ${
-                activeTab === 'SIP' ? 'text-teal-600' : 'text-gray-500'
-              }`}
+              className={`relative z-10 w-[100px] py-1 font-semibold text-sm rounded-full transition-colors ${activeTab === 'SIP' ? 'text-teal-600' : 'text-gray-500'
+                }`}
             >
               SIP
             </button>
             <button
               onClick={() => setActiveTab('Lumpsum')}
-              className={`relative z-10 w-[100px] py-1 font-semibold text-sm rounded-full transition-colors ${
-                activeTab === 'Lumpsum' ? 'text-teal-600' : 'text-gray-500'
-              }`}
+              className={`relative z-10 w-[100px] py-1 font-semibold text-sm rounded-full transition-colors ${activeTab === 'Lumpsum' ? 'text-teal-600' : 'text-gray-500'
+                }`}
             >
               Lumpsum
             </button>
@@ -289,45 +287,45 @@ export const SipCalculator = () => {
                 >
                   <defs>
                     <linearGradient id="colorInvested" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor={GRADIENT_COLORS.invested[0]} stopOpacity={0.8}/>
-                      <stop offset="95%" stopColor={GRADIENT_COLORS.invested[1]} stopOpacity={0.2}/>
+                      <stop offset="5%" stopColor={GRADIENT_COLORS.invested[0]} stopOpacity={0.8} />
+                      <stop offset="95%" stopColor={GRADIENT_COLORS.invested[1]} stopOpacity={0.2} />
                     </linearGradient>
                     <linearGradient id="colorReturns" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor={GRADIENT_COLORS.returns[0]} stopOpacity={0.8}/>
-                      <stop offset="95%" stopColor={GRADIENT_COLORS.returns[1]} stopOpacity={0.2}/>
+                      <stop offset="5%" stopColor={GRADIENT_COLORS.returns[0]} stopOpacity={0.8} />
+                      <stop offset="95%" stopColor={GRADIENT_COLORS.returns[1]} stopOpacity={0.2} />
                     </linearGradient>
                   </defs>
                   <CartesianGrid strokeDasharray="3 3" vertical={false} opacity={0.3} />
                   <XAxis dataKey="year" label={{ value: 'Years', position: 'insideBottom', offset: -5 }} />
-                  <YAxis 
+                  <YAxis
                     tickFormatter={(value) => {
-                      if (value >= 10000000) return `${(value/10000000).toFixed(1)}Cr`;
-                      if (value >= 100000) return `${(value/100000).toFixed(1)}L`;
+                      if (value >= 10000000) return `${(value / 10000000).toFixed(1)}Cr`;
+                      if (value >= 100000) return `${(value / 100000).toFixed(1)}L`;
                       return value;
                     }}
                   />
-                  <Tooltip 
+                  <Tooltip
                     formatter={(value) => [formatCurrency(value), ""]}
                     labelFormatter={(label) => `Year ${label}`}
                     contentStyle={{ borderRadius: '6px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}
                   />
-                  <Area 
-                    type="monotone" 
-                    dataKey="investedAmount" 
-                    name="Invested" 
+                  <Area
+                    type="monotone"
+                    dataKey="investedAmount"
+                    name="Invested"
                     strokeWidth={2}
-                    stroke={COLORS[0]} 
-                    fill="url(#colorInvested)" 
+                    stroke={COLORS[0]}
+                    fill="url(#colorInvested)"
                     stackId="1"
                     animationDuration={1000}
                   />
-                  <Area 
-                    type="monotone" 
-                    dataKey="estimatedReturns" 
-                    name="Returns" 
+                  <Area
+                    type="monotone"
+                    dataKey="estimatedReturns"
+                    name="Returns"
                     strokeWidth={2}
-                    stroke={COLORS[1]} 
-                    fill="url(#colorReturns)" 
+                    stroke={COLORS[1]}
+                    fill="url(#colorReturns)"
                     stackId="1"
                     animationDuration={1000}
                   />
@@ -357,17 +355,17 @@ export const SipCalculator = () => {
                         <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                       ))}
                     </Pie>
-                    <Tooltip 
+                    <Tooltip
                       formatter={(value) => formatCurrency(value)}
-                      contentStyle={{ 
+                      contentStyle={{
                         backgroundColor: 'white',
                         borderRadius: '8px',
                         padding: '8px',
                         boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
                       }}
                     />
-                    <Legend 
-                      verticalAlign="bottom" 
+                    <Legend
+                      verticalAlign="bottom"
                       height={36}
                       iconType="circle"
                       iconSize={10}
