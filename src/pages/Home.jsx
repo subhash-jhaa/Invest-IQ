@@ -58,28 +58,28 @@ export default function Home() {
       role: "Startup Founder",
       image:
         "https://thumbs.dreamstime.com/b/young-man-as-successful-business-startup-founder-young-man-as-successful-business-startup-founder-tablet-computer-262346042.jpg",
-      text: "InvestIQ helped me plan my investments smartly while growing my startup. The AI suggestions are truly tailored!",
+      text: "Invest-IQ helped me plan my investments smartly while growing my startup. The AI suggestions are truly tailored!",
     },
     {
-      name: " Rahul Kumar",
+      name: " Milan Kumar",
       role: "Marketing Executive",
       image:
         "https://th.bing.com/th/id/OIP.QiBuq5R5Av4Vfqsgnqb8VwHaE7?rs=1&pid=ImgDetMain",
-      text: "I never thought investing could be this simple. InvestIQ made me feel confident with every decision.",
+      text: "I never thought investing could be this simple. Invest-IQ made me feel confident with every decision.",
     },
     {
-      name: "Vishal Singh",
+      name: "Ashutosh Kumar",
       role: "Government Employee",
       image:
         "https://th.bing.com/th/id/OIP.vAdlzJYyaCSM2-JKAKJzyQHaFk?rs=1&pid=ImgDetMain",
-      text: "The SIP and tax-saving calculators are so helpful! InvestIQ has become my go-to financial buddy.",
+      text: "The SIP and tax-saving calculators are so helpful! Invest-IQ has become my go-to financial buddy.",
     },
     {
       name: "Anjali Sharma",
       role: "Freelance Writer",
       image:
         "https://thewritelife.com/wp-content/uploads/2020/10/freelance-writing-contracts.jpg",
-      text: "As someone new to investing, I love how InvestIQ explains everything in simple terms.",
+      text: "As someone new to investing, I love how Invest-IQ explains everything in simple terms.",
     },
     {
       name: "Sandeep Nandi",
@@ -93,7 +93,7 @@ export default function Home() {
       role: "Homemaker",
       image:
         "https://th.bing.com/th/id/OIP.r41gh6UpPW122JIdiA88VQHaLL?rs=1&pid=ImgDetMain",
-      text: "Thanks to InvestIQ, I’ve started planning for my children’s future with more clarity and confidence.",
+      text: "Thanks to Invest-IQ, I've started planning for my children's future with more clarity and confidence.",
     },
   ];
 
@@ -155,11 +155,11 @@ export default function Home() {
     <div className="w-full max-w-none sm:max-w-none md:max-w-8xl mx-auto  relative overflow-hidden">
       {/* Background floating icons */}
       <div className="fixed inset-0 -z-10 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-emerald-50/30 to-white/90 backdrop-blur-3xl"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-teal-50/30 to-white/90 backdrop-blur-3xl"></div>
         {backgroundIcons.map((item, index) => (
           <motion.div
             key={index}
-            className="absolute text-emerald-200"
+            className="absolute text-teal-300"
             style={{
               top: item.top,
               left: item.left,
@@ -181,14 +181,14 @@ export default function Home() {
         {/* Multi-layered background effects */}
         <div className="absolute inset-0 z-0">
           {/* Gradient background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-emerald-300/65 via-white to-teal-100" />
+          <div className="absolute inset-0 bg-gradient-to-br from-teal-400/65 via-white to-teal-100" />
 
           {/* Radial glow */}
-          <div className="absolute -top-32 left-1/2 transform -translate-x-1/2 w-[700px] h-[700px] bg-emerald-300/20 rounded-full blur-[120px] opacity-70 pointer-events-none" />
+          <div className="absolute -top-32 left-1/2 transform -translate-x-1/2 w-[700px] h-[700px] bg-teal-400/20 rounded-full blur-[120px] opacity-70 pointer-events-none" />
 
           {/* Blurred floating blobs */}
           <motion.div
-            className="absolute -bottom-10 -right-10 w-40 h-40 bg-emerald-300/30 rounded-full blur-3xl opacity-60"
+            className="absolute -bottom-10 -right-10 w-40 h-40 bg-teal-400/30 rounded-full blur-3xl opacity-60"
             animate={{
               scale: [1, 1.2, 1],
               opacity: [0.4, 0.6, 0.4],
@@ -217,12 +217,12 @@ export default function Home() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <motion.span
+              <motion.span
               whileHover={{ scale: 1.05 }}
-              className="inline-block text-xs md:text-sm px-2 py-1 mb-4 md:mb-1 md:px-5 md:py-2 rounded-full bg-emerald-300/60 text-emerald-700 backdrop-blur-md border border-emerald-500 shadow-md ring-1 ring-emerald-300/40 transition-all duration-300"
+              className="inline-block text-xs md:text-sm px-2 py-1 mb-4 md:mb-1 md:px-5 md:py-2 rounded-full bg-teal-400/60 text-teal-700 backdrop-blur-md border border-teal-500 shadow-md ring-1 ring-teal-400/40 transition-all duration-300"
               style={{
                 boxShadow:
-                  "0 0 10px rgba(16, 185, 129, 0.25), 0 4px 20px rgba(16, 185, 129, 0.15)",
+                  "0 0 10px rgba(99,102,241,0.25), 0 4px 20px rgba(99,102,241,0.15)",
               }}
             >
               ✨{" "}
@@ -243,7 +243,7 @@ export default function Home() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             Smart Investing,{" "}
-            <span className="text-emerald-500">Made Simple</span>
+            <span className="text-teal-500">Made Simple</span>
           </motion.h1>
 
           <motion.p
@@ -267,7 +267,7 @@ export default function Home() {
           >
             <Link
               to="/signup"
-              className="inline-block font-medium text-white bg-emerald-500 rounded-lg hover:bg-emerald-400 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="inline-block font-medium text-white bg-teal-500 rounded-lg hover:bg-teal-500 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               style={{
                 padding:
                   "min(max(0.75rem, 3vw), 1.25rem) min(max(1.5rem, 4vw), 2.5rem)",
@@ -305,7 +305,7 @@ export default function Home() {
           ].map((stat, index) => (
             <motion.div
               key={index}
-              className="flex flex-col items-center gap-3 text-center rounded-3xl border-1 border-emerald-400 bg-gradient-to-tl from-teal-100 via-emerald-300/10 to-emerald-100   p-4 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
+              className="flex flex-col items-center gap-3 text-center rounded-3xl border-1 border-teal-500 bg-gradient-to-tl from-teal-100 via-teal-400/10 to-teal-100   p-4 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -313,11 +313,11 @@ export default function Home() {
             >
               {/* Glowing Circle */}
               <motion.div
-                className="rounded-full bg-gradient-to-br from-emerald-100 to-teal-100 flex items-center justify-center shadow-md"
+                className="rounded-full bg-gradient-to-br from-teal-100 to-teal-100 flex items-center justify-center shadow-md"
                 style={{
                   width: "min(max(3.5rem, 10vw), 4rem)",
                   height: "min(max(3.5rem, 10vw), 4rem)",
-                  boxShadow: "0 0 12px rgba(16,185,129,0.3)",
+                  boxShadow: "0 0 12px rgba(99,102,241,0.3)",
                 }}
                 whileHover={{
                   scale: 1.1,
@@ -330,7 +330,7 @@ export default function Home() {
                     width: "min(max(1.5rem, 4vw), 2rem)",
                     height: "min(max(1.5rem, 4vw), 2rem)",
                   },
-                  className: "text-emerald-500",
+                  className: "text-teal-500",
                 })}
               </motion.div>
 
@@ -390,13 +390,13 @@ export default function Home() {
           >
             {/* Glowing hover blob behind icon */}
             <motion.div
-              className="absolute top-5 left-1/2 transform -translate-x-1/2 w-24 h-24 bg-emerald-100 rounded-full blur-xl opacity-0 transition-opacity duration-500"
+              className="absolute top-5 left-1/2 transform -translate-x-1/2 w-24 h-24 bg-teal-100 rounded-full blur-xl opacity-0 transition-opacity duration-500"
               initial={{ scale: 0.6 }}
               animate={{ scale: 1 }}
             />
 
             <motion.div
-              className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-5 rounded-full bg-emerald-100 flex items-center justify-center"
+              className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-5 rounded-full bg-teal-100 flex items-center justify-center"
               initial={{ scale: 0.7, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               whileHover={{
@@ -406,7 +406,7 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 200, damping: 10 }}
             >
               {createElement(feature.icon, {
-                className: "text-emerald-500",
+                className: "text-teal-500",
                 style: {
                   width: "min(max(2rem, 6vw), 2.5rem)",
                   height: "min(max(2rem, 6vw), 2.5rem)",
@@ -432,7 +432,7 @@ export default function Home() {
 
       {/* Enhanced CTA Section - Better scaling */}
       <motion.div
-        className="py-10 sm:py-20 my-6 sm:my-12 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl sm:rounded-2xl shadow-inner px-4 sm:px-10 mx-2 sm:mx-0"
+        className="py-10 sm:py-20 my-6 sm:my-12 bg-gradient-to-r from-teal-50 to-teal-50 rounded-xl sm:rounded-2xl shadow-inner px-4 sm:px-10 mx-2 sm:mx-0"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -458,7 +458,7 @@ export default function Home() {
               transition={{ delay: 0.4 }}
               style={{ fontSize: "min(max(1rem, 3vw), 1.5rem)" }}
             >
-              Join over 25,000 smart investors who have trusted InvestIQ to help
+              Join over 25,000 smart investors who have trusted Invest-IQ to help
               build their wealth. Our AI-powered platform provides personalized
               guidance every step of the way.
             </motion.p>
@@ -471,7 +471,7 @@ export default function Home() {
             >
               <Link
                 to="/signup"
-                className="text-white font-medium bg-emerald-500 rounded-lg hover:bg-emerald-400 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-1"
+                className="text-white font-medium bg-teal-500 rounded-lg hover:bg-teal-500 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-1"
                 style={{
                   padding:
                     "min(max(0.75rem, 2vw), 1rem) min(max(1.5rem, 3vw), 2.5rem)",
@@ -483,7 +483,7 @@ export default function Home() {
               <Link
                 to="/demo"
                 target="_blank"
-                className="font-medium bg-white text-emerald-500 border-2 border-emerald-500 rounded-lg hover:bg-emerald-50 transition-all shadow-sm"
+                className="font-medium bg-white text-teal-500 border-2 border-teal-500 rounded-lg hover:bg-teal-50 transition-all shadow-sm"
                 style={{
                   padding:
                     "min(max(0.75rem, 2vw), 1rem) min(max(1.5rem, 3vw), 2.5rem)",
@@ -502,11 +502,11 @@ export default function Home() {
             transition={{ delay: 0.4, type: "spring" }}
           >
             <div className="relative">
-              <div className="absolute -inset-6 bg-emerald-200 rounded-full opacity-30 blur-xl"></div>
+              <div className="absolute -inset-6 bg-teal-200 rounded-full opacity-30 blur-xl"></div>
               <div className="bg-white p-5 sm:p-8 rounded-xl shadow-lg relative">
                 <div className="flex items-center gap-3 sm:gap-4 mb-5 sm:mb-6">
                   <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-emerald-100 flex items-center justify-center">
-                    <FiUsers className="w-6 h-6 sm:w-7 sm:h-7 text-emerald-500" />
+                    <FiUsers className="w-6 h-6 sm:w-7 sm:h-7 text-teal-500" />
                   </div>
                   <div className="text-left">
                     <h4 className="text-base sm:text-xl font-semibold">
@@ -520,7 +520,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-3 sm:gap-4">
                   <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-emerald-100 flex items-center justify-center">
-                    <FiBarChart2 className="w-6 h-6 sm:w-7 sm:h-7 text-emerald-500" />
+                    <FiBarChart2 className="w-6 h-6 sm:w-7 sm:h-7 text-teal-500" />
                   </div>
                   <div className="text-left">
                     <h4 className="text-base sm:text-xl font-semibold">
@@ -541,7 +541,7 @@ export default function Home() {
       {/* Enhanced Testimonials Section with background pattern */}
       <motion.div
         ref={testimonialsRef}
-        className="py-10 sm:py-20 my-8 sm:my-16 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl sm:rounded-3xl relative overflow-hidden mx-2 sm:mx-0"
+        className="py-10 sm:py-20 my-8 sm:my-16 bg-gradient-to-r from-teal-50 to-teal-50 rounded-xl sm:rounded-3xl relative overflow-hidden mx-2 sm:mx-0"
       >
         <div className="absolute inset-0 bg-grid-pattern opacity-10" />
 
@@ -550,7 +550,7 @@ export default function Home() {
           {[...Array(3)].map((_, i) => (
             <motion.div
               key={i}
-              className="absolute bg-emerald-200/30 rounded-full blur-xl"
+              className="absolute bg-teal-200/30 rounded-full blur-xl"
               style={{
                 width: `${Math.random() * 10 + 8}rem`,
                 height: `${Math.random() * 10 + 8}rem`,
@@ -593,7 +593,7 @@ export default function Home() {
                 }
                 className="p-2 sm:p-3 rounded-full bg-white shadow-md hover:bg-gray-50 transition-colors"
               >
-                <FiChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-500" />
+                <FiChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-teal-500" />
               </button>
               <button
                 onClick={() =>
@@ -603,7 +603,7 @@ export default function Home() {
                 }
                 className="p-2 sm:p-3 rounded-full bg-white shadow-md hover:bg-gray-50 transition-colors"
               >
-                <FiChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-500" />
+                <FiChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-teal-500" />
               </button>
             </div>
 
@@ -645,7 +645,7 @@ export default function Home() {
                   onClick={() => setCurrentTestimonial(index)}
                   className={`w-2 sm:w-3 h-2 sm:h-3 rounded-full transition-colors ${
                     currentTestimonial === index
-                      ? "bg-emerald-500"
+                      ? "bg-teal-500"
                       : "bg-gray-300"
                   }`}
                 />
@@ -675,24 +675,24 @@ export default function Home() {
         <div className="space-y-3 sm:space-y-5 max-w-xl md:max-w-4xl mx-auto px-2 sm:px-0">
           {[
             {
-              question: "What is InvestIQ?",
+              question: "What is Invest-IQ?",
               answer:
-                "InvestIQ is a smart, AI-powered platform that helps you choose the right investment options based on your age, goals, capital, and risk profile — all in a beginner-friendly and educational way.",
+                "Invest-IQ is a smart, AI-powered platform that helps you choose the right investment options based on your age, goals, capital, and risk profile — all in a beginner-friendly and educational way.",
             },
             {
               question: "Is this a real investment platform?",
               answer:
-                "No. InvestIQ is not a broker or a financial transaction platform. It's an educational and guidance tool that helps you understand what kind of investments may suit you.",
+                "No. Invest-IQ is not a broker or a financial transaction platform. It's an educational and guidance tool that helps you understand what kind of investments may suit you.",
             },
             {
-              question: "Do I need any financial knowledge to use InvestIQ?",
+              question: "Do I need any financial knowledge to use Invest-IQ?",
               answer:
-                'Not at all! InvestIQ is designed for complete beginners. It explains everything in simple terms, and even has a mode called "Explain Like I\'m 18" for ultra-clear explanations.',
+                'Not at all! Invest-IQ is designed for complete beginners. It explains everything in simple terms, and even has a mode called "Explain Like I\'m 18" for ultra-clear explanations.',
             },
             {
-              question: "How does InvestIQ give suggestions?",
+              question: "How does Invest-IQ give suggestions?",
               answer:
-                "InvestIQ uses AI (Gemini) to understand your profile (like age, goal, capital, etc.) and gives you personalized investment suggestions like SIPs, mutual funds, or gold — based on your risk category.",
+                "Invest-IQ uses AI (Gemini) to understand your profile (like age, goal, capital, etc.) and gives you personalized investment suggestions like SIPs, mutual funds, or gold — based on your risk category.",
             },
             {
               question: "Is my data safe?",
@@ -700,9 +700,9 @@ export default function Home() {
                 "Yes. We only collect basic profile info like age, capital, and goals. We don't store any sensitive or financial data, and everything stays private and secure.",
             },
             {
-              question: "Do I need to pay to use InvestIQ?",
+              question: "Do I need to pay to use Invest-IQ?",
               answer:
-                "Nope! InvestIQ MVP is completely free to use. It's designed for learning and exploring how to invest smartly.",
+                "Nope! Invest-IQ MVP is completely free to use. It's designed for learning and exploring how to invest smartly.",
             },
             {
               question: "Does InvestIQ tell me exactly where to invest?",
@@ -721,14 +721,14 @@ export default function Home() {
           ].map((faq, index) => (
             <motion.div
               key={index}
-              className="border border-emerald-200 rounded-lg overflow-hidden"
+              className="border border-teal-200 rounded-lg overflow-hidden"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
               <button
-                className="flex justify-between items-center w-full p-4 sm:p-6 text-left bg-emerald-50/35 hover:bg-emerald-100/45 transition-colors"
+                className="flex justify-between items-center w-full p-4 sm:p-6 text-left bg-teal-50/35 hover:bg-emerald-100/45 transition-colors"
                 onClick={() => toggleFAQ(index)}
               >
                 <span
@@ -741,7 +741,7 @@ export default function Home() {
                   animate={{ rotate: activeIndex === index ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <FiChevronDown className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-500 flex-shrink-0" />
+                  <FiChevronDown className="w-5 h-5 sm:w-6 sm:h-6 text-teal-500 flex-shrink-0" />
                 </motion.div>
               </button>
               <motion.div
@@ -772,7 +772,7 @@ export default function Home() {
 
       {/* Final CTA Section - Improved sizing */}
       <motion.div
-        className="text-center py-10 sm:py-20 my-8 sm:my-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl sm:rounded-3xl text-white relative overflow-hidden mx-2 sm:mx-0"
+        className="text-center py-10 sm:py-20 my-8 sm:my-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl sm:rounded-3xl text-white relative overflow-hidden mx-2 sm:mx-0"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -835,7 +835,7 @@ export default function Home() {
           >
             <Link
               to="/signup"
-              className="font-medium bg-white text-emerald-500 rounded-lg hover:bg-gray-50 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-1"
+              className="font-medium bg-white text-teal-500 rounded-lg hover:bg-gray-50 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-1"
               style={{
                 padding:
                   "min(max(0.75rem, 2vw), 1.25rem) min(max(1.5rem, 3vw), 2.5rem)",

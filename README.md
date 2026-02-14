@@ -1,13 +1,13 @@
 
 <div align="center">
-  <img src="./public/assets/banner.webp" alt="InvestIQ Banner" width="100%" />
+  <img src="./public/assets/banner.webp" alt="Invest-IQ Banner" width="100%" />
 </div>
 
-# 💼 InvestIQ – AI-Powered Investment Assistant
+# 💼 Invest-IQ – AI-Powered Investment Assistant
 
-🔗 **Live Demo:** [InvestIQ.vercel.app](https://InvestIQ.vercel.app)
+🔗 **Live Demo:** [Invest-IQ.vercel.app](https://Invest-IQ.vercel.app)
 
-**InvestIQ** is an AI-powered investment platform that helps beginners understand and plan their investments based on risk, capital, age, and financial goals. Powered by **Gemini AI**, real-time gold prices, and a clean UI — InvestIQ explains everything in a way even an 18-year-old can understand.
+**Invest-IQ** is an AI-powered investment platform that helps beginners understand and plan their investments based on risk, capital, age, and financial goals. Powered by **Gemini AI**, real-time gold prices, and a clean UI — Invest-IQ explains everything in a way even an 18-year-old can understand.
 
 ---
 

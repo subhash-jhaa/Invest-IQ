@@ -102,7 +102,7 @@ export default function ProfileForm() {
   };
 
   const commonClasses =
-    "w-full p-3 border rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500";
+    "w-full p-3 border rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500";
 
   return (
     <div className="max-w-2xl mx-auto">
@@ -285,7 +285,7 @@ export default function ProfileForm() {
             <button
               type="submit"
               disabled={loading || aiLoading}
-              className="w-full px-6 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-500 transition-colors disabled:opacity-50"
+              className="w-full px-6 py-3 bg-teal-600 text-white rounded-lg hover:bg-teal-500 transition-colors disabled:opacity-50"
             >
               {loading || aiLoading ? (
                 <div className="flex items-center justify-center">

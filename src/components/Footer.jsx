@@ -9,7 +9,7 @@ function Footer() {
         <div className="flex flex-col gap-1">
           <div className="transition-transform duration-200 text-center sm:text-left">
             <span className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">
-              InvestIQ
+              Invest-IQ
             </span>
             <p className="text-[10px] sm:text-xs md:text-sm font-light text-gray-600">
               Made with ❤️ by{" "}
@@ -24,7 +24,7 @@ function Footer() {
             </p>
           </div>
           <p className="text-[10px] sm:text-xs text-gray-500 max-w-xs">
-            InvestIQ offers AI-based insights. Not investment advice.
+            Invest-IQ offers AI-based insights. Not investment advice.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ function Footer() {
           {/* Github Link */}
           <div className="relative group">
             <a
-              href="https://github.com/decodewithdeepak/InvestIQ"
+              href="https://github.com/decodewithdeepak/Invest-IQ"
               className="text-gray-600 hover:text-emerald-500 transition-colors p-2"
             >
               <FaGithub className="w-5 h-5 sm:w-6 sm:h-6" />

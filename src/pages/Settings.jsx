@@ -32,7 +32,7 @@ export default function Settings() {
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-[60vh]">
-        <FiLoader className="w-8 h-8 text-emerald-500 animate-spin" />
+        <FiLoader className="w-8 h-8 text-teal-500 animate-spin" />
       </div>
     );
   }
@@ -75,7 +75,7 @@ export default function Settings() {
                         }
                       }}
                       disabled={updating}
-                      className="px-3 py-1 bg-emerald-500 text-white rounded hover:bg-emerald-400 disabled:opacity-50"
+                      className="px-3 py-1 bg-teal-500 text-white rounded hover:bg-teal-500 disabled:opacity-50"
                     >
                       Save
                     </button>
@@ -91,13 +91,13 @@ export default function Settings() {
                     </button>
                   </div>
                   {message && (
-                    <p className="text-sm text-green-600">{message}</p>
+                    <p className="text-sm text-teal-600">{message}</p>
                   )}
                 </div>
               ) : (
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-semibold text-md">
+                    <div className="w-9 h-9 rounded-full bg-teal-100 text-teal-600 flex items-center justify-center font-semibold text-md">
                       {user?.name?.[0]?.toUpperCase() || "?"}
                     </div>
                     <p className="text-lg font-semibold text-gray-800">
@@ -132,9 +132,9 @@ export default function Settings() {
       content: (
         <div className="space-y-4">
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-emerald-50 rounded-lg p-4">
+            <div className="bg-teal-50 rounded-lg p-4">
               <p className="text-sm text-gray-600 mb-1">Risk Profile</p>
-              <p className="text-lg font-semibold text-emerald-600">
+              <p className="text-lg font-semibold text-teal-600">
                 {profile?.riskAppetite || "Not Set"}
               </p>
             </div>
@@ -161,7 +161,7 @@ export default function Settings() {
           </div>
           <button
             onClick={() => navigate("/profile-form")}
-            className="w-full px-4 py-2 text-emerald-500 border border-emerald-500 rounded-lg hover:bg-emerald-50"
+            className="w-full px-4 py-2 text-teal-500 border border-teal-500 rounded-lg hover:bg-teal-50"
           >
             Update Profile
           </button>
@@ -191,7 +191,7 @@ export default function Settings() {
                   setNotifications((prev) => ({ ...prev, [key]: !prev[key] }))
                 }
                 className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                  enabled ? "bg-emerald-500" : "bg-gray-200"
+                  enabled ? "bg-teal-500" : "bg-gray-200"
                 }`}
               >
                 <span
@@ -209,9 +209,9 @@ export default function Settings() {
 
   return (
     <div className="max-w-3xl mx-auto">
-      <div className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-lg shadow-lg p-6 mb-8">
+      <div className="bg-gradient-to-r from-teal-500 to-teal-600 text-white rounded-lg shadow-lg p-6 mb-8">
         <h1 className="text-3xl font-bold mb-2">Account Settings</h1>
-        <p className="text-emerald-50">
+        <p className="text-teal-50">
           Manage your preferences and account details
         </p>
       </div>
@@ -220,7 +220,7 @@ export default function Settings() {
         {settingsSections.map((section) => (
           <div key={section.id} className="bg-white rounded-lg shadow-md p-6">
             <div className="flex items-center gap-2 mb-4">
-              <div className="text-emerald-500">{section.icon}</div>
+              <div className="text-teal-500">{section.icon}</div>
               <h2 className="text-xl font-semibold text-gray-800">
                 {section.title}
               </h2>
@@ -231,7 +231,7 @@ export default function Settings() {
 
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="flex items-center gap-2 mb-4">
-            <FiShield className="w-5 h-5 text-emerald-500" />
+            <FiShield className="w-5 h-5 text-teal-500" />
             <h2 className="text-xl font-semibold text-gray-800">Security</h2>
           </div>
           <div className="space-y-4">

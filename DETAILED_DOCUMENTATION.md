@@ -1,4 +1,4 @@
-# InvestIQ – Comprehensive Documentation
+# Invest-IQ – Comprehensive Documentation
 
 ## Table of Contents
 
@@ -22,7 +22,7 @@
 
 ## 1. Introduction
 
-InvestIQ is an AI-powered investment platform designed to simplify financial planning and investment for users of all experience levels. By leveraging advanced AI models and real-time data, InvestIQ provides personalized insights and tools to help users make informed financial decisions.
+Invest-IQ is an AI-powered investment platform designed to simplify financial planning and investment for users of all experience levels. By leveraging advanced AI models and real-time data, Invest-IQ provides personalized insights and tools to help users make informed financial decisions.
 
 ---
 

@@ -1,5 +1,5 @@
 {
-  "name": "InvestIQ",
+  "name": "Invest-IQ",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,9 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-  "start":  "node index.js"
-
-
+    "start": "node index.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.0",

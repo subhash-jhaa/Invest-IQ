@@ -32,7 +32,7 @@ html {
 
 /* Keep focus outline for keyboard users */
 :focus-visible {
-  outline: 2px solid #10b981;
+  outline: 2px solid #14B8A6;
   outline-offset: 2px;
 }
 
@@ -46,12 +46,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #10b981;
+  background: #14B8A6;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #059669;
+  background: #0D9488;
 }
 
 /* Loading spinner animation */
@@ -71,6 +71,7 @@ html {
     transform: translateX(100%);
     opacity: 0;
   }
+
   to {
     transform: translateX(0);
     opacity: 1;
@@ -83,17 +84,20 @@ html {
 
 @keyframes glow {
   0% {
-    text-shadow: 0 0 2px rgba(16, 185, 129, 0.4),
-      /* subtle constant light shadow */ 0 0 5px #34d399, 0 0 10px #34d399,
-      0 0 20px #10b981;
+    text-shadow: 0 0 2px rgba(16, 185, 129, 0.35),
+      /* subtle constant light shadow */
+      0 0 5px #5EEAD4, 0 0 10px #5EEAD4,
+      0 0 20px #14B8A6;
   }
+
   50% {
-    text-shadow: 0 0 2px rgba(16, 185, 129, 0.4), 0 0 10px #6ee7b7,
-      0 0 20px #34d399, 0 0 30px #10b981;
+    text-shadow: 0 0 2px rgba(16, 185, 129, 0.35), 0 0 10px #99F6E4,
+      0 0 20px #5EEAD4, 0 0 30px #14B8A6;
   }
+
   100% {
-    text-shadow: 0 0 2px rgba(16, 185, 129, 0.4), 0 0 5px #34d399,
-      0 0 10px #34d399, 0 0 20px #10b981;
+    text-shadow: 0 0 2px rgba(16, 185, 129, 0.35), 0 0 5px #5EEAD4,
+      0 0 10px #5EEAD4, 0 0 20px #14B8A6;
   }
 }
 

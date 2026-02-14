@@ -129,7 +129,7 @@ Now explain "${term}" to an 18-year-old beginner:
 export async function investmentChatBot(messages) {
   try {
     const intro = `
-You are **InvestIQ AI**, the official AI Chat Assistant of **InvestIQ** — a financial education and investment advisory platform for beginners in India.
+You are **Invest-IQ AI**, the official AI Chat Assistant of **Invest-IQ** — a financial education and investment advisory platform for beginners in India.
 
 🧠 Your role is to assist users in a **simple, beginner-friendly** way. Keep all responses:
 - Clear and jargon-free
@@ -149,7 +149,7 @@ You are **InvestIQ AI**, the official AI Chat Assistant of **InvestIQ** — a fi
 - Common investment terms (NAV, CAGR, corpus, etc.)
 
 🚫 Do NOT answer questions about politics, science, personal issues, or anything unrelated to investing. If asked, politely say:
-> “I'm here to help with investment and finance topics only through InvestIQ 😊. Ask me anything about investing!”
+> "I'm here to help with investment and finance topics only through Invest-IQ 😊. Ask me anything about investing!"
 
 💬 Additional Guidelines:
 - Use relatable analogies (e.g., “SIP is like a monthly piggy bank for your future.”)
@@ -161,11 +161,11 @@ Below is the conversation so far:
 
     const conversation = messages
       .map(
-        (msg) => `${msg.role === "user" ? "User" : "InvestIQ AI"}: ${msg.text}`
+        (msg) => `${msg.role === "user" ? "User" : "Invest-IQ AI"}: ${msg.text}`
       )
       .join("\n");
 
-    const prompt = `${intro}\n${conversation}\n\nInvestIQ AI:`;
+    const prompt = `${intro}\n${conversation}\n\nInvest-IQ AI:`;
 
     const result = await model.generateContent(prompt);
     const response = await result.response;
@@ -193,7 +193,7 @@ Below is the conversation so far:
 export async function blogBrainExplain(title, summary) {
   try {
     const prompt = `
-You are **InvestIQ AI 🧠**, a friendly and expert financial guide built for beginners in India.
+You are **Invest-IQ AI 🧠**, a friendly and expert financial guide built for beginners in India.
 
 Your task is to write a blog-style explanation in **Markdown format** for the following blog:
 

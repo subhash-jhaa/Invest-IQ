@@ -27,7 +27,7 @@ export const FDCalculator = () => {
     return `₹${Math.round(value).toLocaleString()}`;
   };
 
-  const COLORS = ['#059669', '#6366F1'];
+  const COLORS = ['#0D9488', '#14B8A6'];
 
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden max-w-full">
@@ -43,10 +43,10 @@ export const FDCalculator = () => {
           <div className="space-y-2">
             <div className="flex justify-between items-center">
               <label className="flex items-center gap-2 text-gray-700">
-                <FiDollarSign className="text-emerald-500" />
+                <FiDollarSign className="text-teal-500" />
                 Total Investment
               </label>
-              <div className="bg-emerald-50 text-emerald-600 font-medium px-3 py-1 rounded-md">
+              <div className="bg-teal-50 text-teal-600 font-medium px-3 py-1 rounded-md">
                 {formatCurrency(investment)}
               </div>
             </div>
@@ -57,7 +57,7 @@ export const FDCalculator = () => {
               step="500"
               value={investment}
               onChange={(e) => setInvestment(Number(e.target.value))}
-              className="w-full accent-emerald-500"
+              className="w-full accent-teal-500"
             />
             <div className="flex justify-between text-xs text-gray-500">
               <span>₹1,000</span>
@@ -69,10 +69,10 @@ export const FDCalculator = () => {
           <div className="space-y-2">
             <div className="flex justify-between items-center">
               <label className="flex items-center gap-2 text-gray-700">
-                <FiTrendingUp className="text-indigo-500" />
+                <FiTrendingUp className="text-teal-500" />
                 Interest Rate (p.a)
               </label>
-              <div className="bg-indigo-50 text-indigo-600 font-medium px-3 py-1 rounded-md">
+              <div className="bg-teal-50 text-teal-600 font-medium px-3 py-1 rounded-md">
                 {interestRate}%
               </div>
             </div>
@@ -83,7 +83,7 @@ export const FDCalculator = () => {
               step="0.1"
               value={interestRate}
               onChange={(e) => setInterestRate(Number(e.target.value))}
-              className="w-full accent-indigo-500"
+              className="w-full accent-teal-500"
             />
             <div className="flex justify-between text-xs text-gray-500">
               <span>1%</span>
@@ -133,11 +133,11 @@ export const FDCalculator = () => {
           <div className="mt-6 p-4 bg-gray-50 rounded-lg space-y-3">
             <div className="flex justify-between">
               <span className="text-gray-600">Invested amount:</span>
-              <span className="font-medium text-emerald-600">{formatCurrency(investment)}</span>
+              <span className="font-medium text-teal-600">{formatCurrency(investment)}</span>
             </div>
             <div className="flex justify-between">
               <span className="text-gray-600">Est. returns:</span>
-              <span className="font-medium text-indigo-600">{formatCurrency(returns)}</span>
+              <span className="font-medium text-teal-600">{formatCurrency(returns)}</span>
             </div>
             <div className="flex justify-between pt-2 border-t">
               <span className="text-gray-900 font-bold">Maturity value:</span>
@@ -189,7 +189,7 @@ export const FDCalculator = () => {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-emerald-50 to-indigo-50 rounded-lg shadow p-4">
+          <div className="bg-gradient-to-br from-teal-50 to-teal-50 rounded-lg shadow p-4">
             <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-3">Summary</h3>
             <div className="space-y-3">
               <div className="flex flex-col">
@@ -201,7 +201,7 @@ export const FDCalculator = () => {
               <div className="flex gap-4 sm:gap-8">
                 <div className="flex-1">
                   <div className="text-xs sm:text-sm text-gray-600">Returns:</div>
-                  <div className="text-base sm:text-lg font-semibold text-indigo-600">
+                  <div className="text-base sm:text-lg font-semibold text-teal-600">
                     {formatCurrency(returns)}
                   </div>
                 </div>

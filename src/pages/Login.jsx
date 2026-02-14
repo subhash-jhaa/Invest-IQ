@@ -65,7 +65,7 @@ export default function Login() {
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-screen">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-emerald-500"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-teal-500"></div>
       </div>
     );
   }
@@ -88,9 +88,9 @@ export default function Login() {
         )}
 
         {successMessage && (
-          <div className="mb-4 p-3 bg-green-50 border border-green-200 rounded-lg flex items-start">
-            <FiCheck className="text-green-500 mt-0.5 mr-2 flex-shrink-0" />
-            <p className="text-sm text-green-600">{successMessage}</p>
+          <div className="mb-4 p-3 bg-teal-50 border border-green-200 rounded-lg flex items-start">
+            <FiCheck className="text-teal-500 mt-0.5 mr-2 flex-shrink-0" />
+            <p className="text-sm text-teal-600">{successMessage}</p>
           </div>
         )}
 
@@ -107,7 +107,7 @@ export default function Login() {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
                 placeholder="you@example.com"
                 required
               />
@@ -127,13 +127,13 @@ export default function Login() {
                 type={showPassword ? "text" : "password"}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="block w-full pl-10 pr-10 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                className="block w-full pl-10 pr-10 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
                 placeholder="••••••••"
                 required
               />
 
               <div
-                className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer text-gray-500 hover:text-green-500 "
+                className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer text-gray-500 hover:text-teal-500 "
                 onClick={() => setShowPassword((prev) => !prev)}
               >
                 {showPassword ? <FaEyeSlash /> : <FaEye />}
@@ -144,7 +144,7 @@ export default function Login() {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full py-2 px-4 border border-transparent rounded-lg shadow-sm text-white bg-emerald-500 hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 disabled:opacity-70 disabled:cursor-not-allowed"
+            className="w-full py-2 px-4 border border-transparent rounded-lg shadow-sm text-white bg-teal-500 hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 disabled:opacity-70 disabled:cursor-not-allowed"
           >
             {isLoading ? "Signing in..." : "Sign In"}
           </button>
@@ -155,7 +155,7 @@ export default function Login() {
             Don't have an account?{" "}
             <Link
               to="/signup"
-              className="text-emerald-500 hover:text-emerald-400"
+              className="text-teal-500 hover:text-teal-500"
             >
               Sign up here
             </Link>
