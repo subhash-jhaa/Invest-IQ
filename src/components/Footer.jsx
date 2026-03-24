@@ -14,7 +14,7 @@ function Footer() {
             <p className="text-[10px] sm:text-xs md:text-sm font-light text-gray-600">
               Made with ❤️ by{" "}
               <a
-                href="https://InvestIQmodi.vercel.app"
+                href="https://my.investiq.vercel.app"
                 className="underline hover:text-emerald-600"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -33,7 +33,7 @@ function Footer() {
           {/* Github Link */}
           <div className="relative group">
             <a
-              href="https://github.com/decodewithdeepak/Invest-IQ"
+              href="https://github.com/subhash-jhaa/Invest-IQ"
               className="text-gray-600 hover:text-emerald-500 transition-colors p-2"
             >
               <FaGithub className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -46,7 +46,7 @@ function Footer() {
           {/* Mail Link */}
           <div className="relative group">
             <a
-              href="mailto:deepakmodi8676@gmail.com"
+              href="mailto:subhashkumarjha162@gmail.com"
               className="text-gray-600 hover:text-emerald-500 transition-colors p-2"
             >
               <MdMail className="w-5 h-5 sm:w-6 sm:h-6" />
