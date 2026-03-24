@@ -14,7 +14,7 @@ function Footer() {
             <p className="text-[10px] sm:text-xs md:text-sm font-light text-gray-600">
               Made with ❤️ by{" "}
               <a
-                href="https://my.investiq.vercel.app"
+                href="https://my-investiq.vercel.app"
                 className="underline hover:text-emerald-600"
                 target="_blank"
                 rel="noopener noreferrer"
